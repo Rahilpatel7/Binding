@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i =new Intent(MainActivity.this,SecondActivity.class);
             i.putExtra("name",binding.et1.getText().toString());
             startActivity(i);
+            Toast.makeText(this, "HELLO", Toast.LENGTH_SHORT).show();
         });
     }
 }
